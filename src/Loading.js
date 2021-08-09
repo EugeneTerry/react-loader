@@ -3,12 +3,12 @@ import React, { useState } from "react";
 
 export default function Loading({ startText, stopText }) {
   const [loading, setLoading] = useState(true);
-  const [loadingText, setLoadingText] = useState("Loading");
+  const [loadingText, setLoadingText] = useState("Loading Up");
 
   const handleClick = () => {
     setLoading((prevState) => !prevState);
     setLoadingText((prevState) => {
-      if (prevState === "Loading") {
+      if (prevState === "Loading Up") {
         return "Not Loading";
       } else {
         return "Loading";
